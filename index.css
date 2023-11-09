@@ -21,8 +21,8 @@
 /* Mobile view */
 
 body {
-    width: 375px;
-    background-color: var(--light-gray);
+    width: 100%;
+    background-color: var(--primary-white);
 }
 main {
     width: 100%;
@@ -34,10 +34,104 @@ main {
 .grid-container {
     width: 90%;
     display: grid;
-    row-gap: 10px;
+    row-gap: 25px;
+    margin: 50px 0;
 }
 
 
 .grid-container .cards {
-    background-color: aqua;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;}
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.grid-container .daniel {
+    position: relative;
+    background-color: var(--primary-moderate-violet);
+    z-index: 2;
+}
+
+.grid-container .daniel .question-icon {
+    position: absolute;
+    /*width: 100px;*/
+    height: 120px;
+    top: 0;
+    right: 20px;
+    z-index: 1;
+}
+.grid-container .cards .cards-details {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    z-index: 2;
+}
+
+.cards .cards-details .profile-info {
+    display: flex;
+    column-gap: 10px;
+    align-items: center
+}
+
+.cards-details .profile-info .img-wrapper img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    /*object-fit: cover;*/
+    border: 2px solid var(--light-gray);
+}
+
+.cards-details .profile-info .name-designation p:first-child {
+    font-size: .9rem;
+    font-weight: 700;
+    color: var(--primary-white);
+}
+
+.cards-details .profile-info .name-designation p:last-child {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--light-gray);
+}
+
+.cards-details .review .short-intro {
+    width: 98%;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-white);
+    margin-bottom: 20px;
+}
+
+.cards-details .review .full-review {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--light-gray);
+}
+
+.grid-container .jonathan {
+    background-color: var(--primary-dark-grayishblue);
+}
+
+.grid-container .jeanette {
+    background-color: var(--primary-white);
+}
+
+.grid-container .patrick {
+    background-color: var(--primary-dark-blackishblue);
+}
+
+.grid-container .kira {
+    background-color: var(--primary-white);
+}
+.grid-container .jeanette .name-designation p:first-child,
+.grid-container .kira .name-designation p:first-child {
+    color: var(--primary-dark-grayishblue);
+}
+
+.grid-container .jeanette .review .short-intro,
+.grid-container .kira .review .short-intro {
+    color: var(--primary-dark-grayishblue);
+}
+
+
