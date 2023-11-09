@@ -1,91 +1,217 @@
-# Frontend Mentor - Testimonials grid section
+# Frontend Mentor - Testimonials grid section solution
 
-![Design preview for the Testimonials grid section coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+- [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
 
-## The challenge
+## Overview
 
-Your challenge is to build out this testimonials grid section and get it looking as close to the design as possible.
+### The challenge
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+- Desktop view
+![](screenshoots/desktop_v.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+- Mobile view
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+  ![](screenshoots/mobile_v.png)
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Links
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Solution URL: [GitHub](https://github.com/EshrakRahman/Frontend-Mentor---Testimonials-grid-section)
+- Live Site URL: [GitHub page](https://eshrakrahman.github.io/Frontend-Mentor---Testimonials-grid-section/)
 
-## Building your project
+## My process
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+### Built with
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-## Deploying your project
+### What I learned
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+I recently completed a newbie challenge on FrontendMasters, diving deep into the world of CSS Flexbox. Before this, positioning items in dynamic layouts felt complex. Flexbox, however, transformed my approach, offering a streamlined method to align and distribute elements within a container. Through properties like justify-content, align-items, and flex-direction, I mastered the art of creating responsive and visually appealing designs. This wasn't just about grasping a theoretical concept; it was hands-on learning, giving me the confidence to tackle modern web design challenges with a fresh perspective.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+To see how you can add code snippets, see below:
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+```html
+  <div class="grid-container">
+  <div class="cards daniel">
+    <img class="question-icon" src="images/bg-pattern-quotation.svg" alt="Question mark icon at the back with transparency">
+    <div class="cards-details">
+      <div class="profile-info">
+        <div class="img-wrapper">
+          <img src="images/image-daniel.jpg" alt="Daniel profile picture">
+        </div>
+        <div class="name-designation">
+          <p>Daniel Clifford</p>
+          <p>Verified Graduate</p>
+        </div>
+      </div>
+      <div class="review">
+        <p class="short-intro">
+          I received a job offer mid-course, and the subjects I learned were current, if not more so,
+          in the company I joined. I honestly feel I got every penny’s worth.
+        </p>
+        <p class="full-review">
+          “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a
+          transition and have heard some people who had an amazing experience here. I signed up
+          for the free intro course and found it incredibly fun! I enrolled shortly thereafter.
+          The next 12 weeks was the best - and most grueling - time of my life. Since completing
+          the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="cards jonathan">
+    <div class="cards-details">
+      <div class="profile-info">
+        <div class="img-wrapper">
+          <img src="images/image-jonathan.jpg" alt="Jonathan profile picture">
+        </div>
+        <div class="name-designation">
+          <p>Jonathan Walters</p>
+          <p>Verified Graduate</p>
+        </div>
+      </div>
+      <div class="review">
+        <p class="short-intro">
+          The team was very supportive and kept me motivated
+        </p>
+        <p class="full-review">
+          “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer
+          for a big company. This was one of the best investments I’ve made in myself. ”
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="cards jeanette">
+    <div class="cards-details">
+      <div class="profile-info">
+        <div class="img-wrapper">
+          <img src="images/image-jeanette.jpg" alt="Jeanette profile picture">
+        </div>
+        <div class="name-designation">
+          <p>Jeanette Harmon</p>
+          <p>Verified Graduate</p>
+        </div>
+      </div>
+      <div class="review">
+        <p class="short-intro">
+          An overall wonderful and rewarding experience
+        </p>
+        <p class="full-review">
+          “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living
+          while doing something I love. ”
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="cards patrick">
+    <div class="cards-details">
+      <div class="profile-info">
+        <div class="img-wrapper">
+          <img src="images/image-patrick.jpg" alt="Patrick profile picture">
+        </div>
+        <div class="name-designation">
+          <p>Patrick Abrams</p>
+          <p>Verified Graduate</p>
+        </div>
+      </div>
+      <div class="review">
+        <p class="short-intro">
+          Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and
+          learning from their experiences was easy.
+        </p>
+        <p class="full-review">
+          “ The staff seem genuinely concerned about my progress which I find really refreshing. The program
+          gave me the confidence necessary to be able to go out in the world and present myself as a capable
+          junior developer. The standard is above the rest. You will get the personal attention you need from
+          an incredible community of smart and amazing people. ”
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="cards kira">
+    <div class="cards-details">
+      <div class="profile-info">
+        <div class="img-wrapper">
+          <img src="images/image-kira.jpg" alt="Kira profile picture">
+        </div>
+        <div class="name-designation">
+          <p>Kira Whittle</p>
+          <p>Verified Graduate</p>
+        </div>
+      </div>
+      <div class="review">
+        <p class="short-intro">
+          Such a life-changing experience. Highly recommended!
+        </p>
+        <p class="full-review">
+          “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from
+          professionals who can help me learn programming step by step. I was encouraged to enroll by a former
+          student of theirs who can only say wonderful things about the program. The entire curriculum and staff
+          did not disappoint. They were very hands-on and I never had to wait long for assistance. The agile team
+          project, in particular, was outstanding. It took my learning to the next level in a way that no tutorial
+          could ever have. In fact, I’ve often referred to it during interviews as an example of my development
+          experience. It certainly helped me land a job as a full-stack developer after receiving multiple offers.
+          100% recommend! ”
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+```css
+.cards-details .profile-info .name-designation p:first-child {
+  font-size: .9rem;
+  font-weight: 700;
+  color: var(--primary-white);
+}
 
-## Create a custom `README.md`
+.cards-details .profile-info .name-designation p:last-child {
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--light-gray);
+}
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+.cards-details .review .short-intro {
+  width: 98%;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-white);
+  margin-bottom: 20px;
+}
+```
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+### Continued development
 
-## Submitting your solution
+Having tackled FrontendMasters' challenge, I delved into CSS Flexbox, streamlining complex layouts with newfound mastery. Using pivotal properties, I now confidently craft responsive designs, a testament to my hands-on growth in modern web design. My continuous development highlights my resilience and adaptabilit
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## Author
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+- Website - [GitHub](https://www.github.com/eshrakrahman)
+- Frontend Mentor - [@eshrakrahman](https://www.frontendmentor.io/profile/eshrakrahman)
+- Twitter - [@rahman_eshrak](https://www.twitter.com/rahman_eshrak)
